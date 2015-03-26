@@ -1,0 +1,28 @@
+{
+  "name": "frr",
+  "version": "0.0.1",
+  "description": "Functionally Reactive React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify es5/*.js -o build/bundle.js",
+    "jsx": "jsx --harmony src es5 -w"
+  },
+  "author": "Kevin Barabash (kevinb7@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^4.7.16",
+    "react": "^0.13.1",
+    "rx": "^2.4.6"
+  },
+  "devDependencies": {
+    "babelify": "^5.0.4",
+    "browserify": "^9.0.3",
+    "watchify": "^2.6.1"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
